@@ -1,0 +1,77 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Styles pour le mode clair */
+.light-mode {
+  --chart-line-color: #8884d8;
+  --chart-grid-color: #ccc;
+  --chart-text-color: #000;
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --card-bg: #f9f9f9;
+  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --icon-color: #eab308; /* Couleur des icônes en mode clair */
+  --low-power-color: #22c55e; /* Couleur pour puissance faible en mode clair */
+  --medium-power-color: #eab308; /* Couleur pour puissance moyenne en mode clair */
+  --high-power-color: #ef4444; /* Couleur pour puissance élevée en mode clair */
+}
+
+/* Styles pour le mode sombre */
+.dark-mode {
+  --chart-line-color: #8884d8;
+  --chart-grid-color: #555;
+  --chart-text-color: #fff;
+  --background-color: #1a1a1a;
+  --text-color: #ffffff;
+  --card-bg: #2d2d2d;
+  --card-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+  --icon-color: #fde047; /* Couleur des icônes en mode sombre */
+  --low-power-color: #86efac; /* Couleur pour puissance faible en mode sombre */
+  --medium-power-color: #fde047; /* Couleur pour puissance moyenne en mode sombre */
+  --high-power-color: #fca5a5; /* Couleur pour puissance élevée en mode sombre */
+}
+
+
+/* Appliquer les variables CSS */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.card {
+  background-color: var(--card-bg);
+  box-shadow: var(--card-shadow);
+  padding: 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+/* Dans votre fichier CSS global */
+.dark-mode {
+  --card-bg: #1a1a1a;
+  --card-text: #ffffff;
+  --button-bg: #2e7d32;
+  --button-hover: #1b5e20;
+}
+
+.light-mode {
+  --card-bg: #ffffff;
+  --card-text: #000000;
+  --button-bg: #4caf50;
+  --button-hover: #388e3c;
+}
+
+.card {
+  background-color: var(--card-bg);
+  color: var(--card-text);
+}
+
+.button {
+  background-color: var(--button-bg);
+  color: white;
+}
+
+.button:hover {
+  background-color: var(--button-hover);
+}
