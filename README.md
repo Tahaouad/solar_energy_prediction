@@ -139,9 +139,9 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 
 ---
 
-## 👤 Auteur
+## 👤 Auteurs
 
-Taha Ouad - Développeur principal.
+Taha Ouad | Allaoui achraf - Développeur principal.
 
 ---
 
