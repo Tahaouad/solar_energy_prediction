@@ -1,0 +1,12 @@
+!PROJECT_TREE.md
+*.log
+/dist/
+/build/
+!.gitignore
+*.egg-info
+*~
+*.py[co]
+.env
+*.sw[op]
+/__pycache__/
+/node_modules/
